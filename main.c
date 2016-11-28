@@ -16,13 +16,7 @@ void myfunc(int a, int b, int *myarraypointer[2])
     *myarraypointer[1] = product;
 
 
-
-
-
-
-
 }
-
 
 
 int main()
@@ -36,15 +30,18 @@ int main()
     myarraypointer[0] = &myarray[0];
     myarraypointer[1] = &myarray[1];
 
-
+    //shows that the pointer accessing the values stored in the array
     printf("\nmy array 0: %d , 1: %d",*myarraypointer[0],*myarraypointer[1]);
 
     myfunc(2,5,myarraypointer);
+    
+    //passes numbers a b and a pointer array so that the function can access the memory locations of the array and return 
 
     printf("\nmy array using pointer 0: %d , 1: %d",*myarraypointer[0],*myarraypointer[1]);
+    //prints out the contents by accessing the memory address stored in a pointer
 
     printf("\n my array vars 0: %d , 1: %d",myarray[0],myarray[1]);
-
+    // shows that a permanant change has been made by the function as now are using the actual array.
 
 
 
